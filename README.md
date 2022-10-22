@@ -16,30 +16,34 @@
 ***Deployment -> Replicaset -> Pod -> Container***
 
 ## Commands  
-#### Get Pods
-- `kubectl get pod` (pod name `<deployment name>-<replicaset ID>-<pod ID>`)
-#### Get deployments
-- `kubectl get deployment`
-#### Get ReplicaSets
-- `kubectl get replicaset` (replicaset name `<deployment name>-<replicaset ID>`)
+#### Get Status of different k8s components
+- `kubectl get nodes | pod | services | replicaset | deployment`
 
-#### Create a deployment
+#### CRUD Commands
+##### *Create a deployment*
 - `kubectl create deployment <deployment name> --image=<IMAGE> [--dry-run] [options]`
   > `kubectl create deployment nginx-deployment --image=nginx`
 
-#### Edit a deployment
+##### *Edit a deployment*
 - `kubectl edit deployment <deployment name>`
   > `kubectl edit deployment nginx-deployment`
 
-#### Delete deployment
+##### *Delete deployment*
 - `kubectl delete deployment <deployment name>`
 
-#### Get additional information about pod
+#### Debugging Pods
+##### *Get additional information about pod*
 - `kubectl describe pod <pod name>`
 
-#### Get pod logs
+##### *Get pod logs*
 - `kubectl logs <pod name>` 
 
-#### Login into a pod
+##### *Login into a pod*
 - `kubectl exec -it <pod name> -- bin/bash`
+
+#### Apply/Delete configuration
+- `kubectl apply -f <YAML FILE>`
+- `kubectl delete -f <YAML FILE>`
+
+
 
