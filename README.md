@@ -49,6 +49,10 @@
 ```
 1. Metadata.
 2. Specification.
-3. Status (Automatically adds by k8s)/
+3. Status (Automatically adds by k8s).
 ```
+
+#### Smample Configutration Files: 
+- [Deployment File](./kubernetes-configuration-file-explained/nginx-deployment.yaml)
+- [Service File](kubernetes-configuration-file-explained/nginx-service.yaml)
 
