@@ -17,7 +17,7 @@
 
 ## Commands  
 #### Get Status of different k8s components
-- `kubectl get nodes | pod | service | replicaset | deployment`
+- `kubectl get nodes | pod | service | replicaset | deployment | statefulset [-o wide | yaml]`
 
 #### CRUD Commands
 ##### *Create a deployment*
@@ -56,3 +56,5 @@
 - [Deployment File](./kubernetes-configuration-file-explained/nginx-deployment.yaml)
 - [Service File](kubernetes-configuration-file-explained/nginx-service.yaml)
 
+#### Get additional information about pod
+- `kubectl describe service <service name>`
