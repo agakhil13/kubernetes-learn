@@ -17,7 +17,7 @@
 
 ## Commands  
 #### Get Status of different k8s components
-- `kubectl get nodes | pod | service | replicaset | deployment | statefulset [-o wide | yaml]`
+- `kubectl get nodes | pod | service | replicaset | deployment | statefulset | endpoints [-o wide | yaml]`
 
 #### CRUD Commands
 ##### *Create a deployment*
