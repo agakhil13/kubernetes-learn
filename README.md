@@ -45,5 +45,10 @@
 - `kubectl apply -f <YAML FILE>`
 - `kubectl delete -f <YAML FILE>`
 
-
+#### Configuration File:
+```
+1. Metadata.
+2. Specification.
+3. Status (Automatically adds by k8s)/
+```
 
